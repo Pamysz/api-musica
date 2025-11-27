@@ -1,0 +1,24 @@
+[project]
+name = "projeto-bosta"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Hendryck Lima",email = "contatohendrycklima@hotmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "requests (>=2.32.4,<3.0.0)",
+    "streamlit (>=1.46.1,<2.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "projeto_bosta", from = "src"}]
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.5"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
